@@ -9,7 +9,7 @@ d=json.load(open(DATA)); geo=json.load(open(GEO))
 IST=timezone(timedelta(hours=5,minutes=30))
 ts=lambda s: datetime.fromisoformat(s.replace("Z","+00:00")).astimezone(IST)
 V,E,G=d["visitors"],d["events"],d["gens"]; OK=[g for g in G if g["status"]=="ok"]
-LAB={"prcv":"PRCV","ml":"ML","dwdm":"DWDM","ds":"DS","rldl":"RLDL","cs_prcv1":"PRCV CS1","cs_prcv2":"PRCV CS2","cs_ml1":"ML CS1","cs_ml2":"ML CS2"}
+LAB={"prcv":"PRCV","ml":"ML","dwdm":"DWDM","ds":"DS","rldl":"RLDL","cs_prcv1":"PRCV CS1","cs_prcv2":"PRCV CS2","cs_ml1":"ML CS1","cs_ml2":"ML CS2","dsnew":"DS (new)"}
 BG="#f7f5f2"; INK="#0b0b0b"; Y="#ffb114"; B="#0075de"; R="#f5472f"; N="#020a3b"; LB="#62aef0"; PEACH="#f6d5bb"
 plt.rcParams.update({"font.family":"Helvetica","axes.facecolor":BG,"figure.facecolor":BG,"axes.edgecolor":"#d6d3cf","axes.spines.top":False,"axes.spines.right":False,"text.color":INK,"axes.labelcolor":INK,"xtick.color":"#555","ytick.color":"#555","axes.titleweight":"bold","axes.titlesize":13,"axes.titlelocation":"left"})
 def save(f,name): f.savefig(f"{OUT}/{name}.png",dpi=170,bbox_inches="tight",facecolor=BG); plt.close(f)
