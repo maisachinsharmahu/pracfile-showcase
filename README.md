@@ -21,7 +21,7 @@ Every semester, every engineering student has to submit a **lab record file**: t
 | **Time to a finished file** | a few seconds (median **3.3 s** click to file) |
 | **Login** | none |
 | **Install** | none, runs in the browser, works on phones |
-| **First 27 hours live** | **255** unique visitors, **758** files delivered, **97.3 %** success rate |
+| **First 44 hours live** | **291** unique visitors, **895** files delivered, **97.7 %** success rate |
 
 ---
 
@@ -272,29 +272,29 @@ What that pipeline gave the files:
 
 ## 9. Launch analytics (anonymous)
 
-First **27 hours** after going live, measured from the product's own usage log (IST). Everything here is aggregated and anonymous.
+First **44 hours** after going live (17 Nov, 4 PM to 19 Nov, noon), measured from the product's own usage log (IST). Everything here is aggregated and anonymous.
 
 ### Headline numbers
 
 | Metric | Value |
 |---|---|
-| Page views | **549** |
-| Unique visitors | **255** |
-| Files delivered | **758** |
-| Success rate | **97.3 %** |
-| Returning visitors | **127** (50 %) |
-| Visitors who downloaded at least once | **154** (60 %) |
-| Visitors who downloaded 3 or more files | **88** (35 %) |
+| Page views | **646** |
+| Unique visitors | **291** |
+| Files delivered | **895** |
+| Success rate | **97.7 %** |
+| Returning visitors | **153** (53 %) |
+| Visitors who downloaded at least once | **179** (62 %) |
+| Visitors who downloaded 3 or more files | **105** (36 %) |
 | Median time from click to finished file | **3.3 s** |
 | Average file size | **about 3 MB** |
-| Total data delivered | **about 2.3 GB** |
+| Total data delivered | **about 2.7 GB** |
 | Real-time peak | **132 downloads in a single hour** |
 
 ### Traffic, hour by hour
 
 <p align="center"><img src="analytics/01_timeline.png" width="860" alt="Hourly traffic" /></p>
 
-It spread by word of mouth in class group chats: a first wave on the evening it launched, a quiet night, and a second wave the next morning as more classes found it. The peak hour carried **132 downloads**, handled with no queue, which is exactly the burst the "build on the device" design was meant for.
+It spread by word of mouth in class group chats: a first wave on the evening it launched, a quiet night, a bigger second day as more classes found it (479 downloads on day two versus 350 on launch day), and steady traffic continuing into day three. The peak hour carried **132 downloads**, handled with no queue, which is exactly the burst the "build on the device" design was meant for.
 
 ### When students use it
 
@@ -306,7 +306,7 @@ Two clear rhythms: **late evening to midnight** (the night-before-submission cru
 
 <p align="center"><img src="analytics/04_funnel.png" width="620" alt="Funnel" /></p>
 
-**60 %** of visitors downloaded something, which is very high for a tool with no onboarding. Half of all visitors **came back**, and **35 %** came back to grab three or more files.
+**62 %** of visitors downloaded something, which is very high for a tool with no onboarding. More than half of all visitors (**53 %**) **came back**, and **36 %** grabbed three or more files.
 
 ### Which labs people want
 
@@ -314,17 +314,17 @@ Two clear rhythms: **late evening to midnight** (the night-before-submission cru
 
 | Rank | Product | Downloads | Share |
 |---|---|---|---|
-| 1 | PRCV | 180 | 23.7 % |
-| 2 | ML | 122 | 16.1 % |
-| 3 | RLDL | 114 | 15.0 % |
-| 4 | DWDM | 106 | 14.0 % |
-| 5 | DS | 82 | 10.8 % |
-| 6 | PRCV case study 2 | 51 | 6.7 % |
-| 7 | ML case study 1 | 44 | 5.8 % |
-| 8 | ML case study 2 | 38 | 5.0 % |
-| 9 | PRCV case study 1 | 21 | 2.8 % |
+| 1 | PRCV | 203 | 22.7 % |
+| 2 | ML | 146 | 16.3 % |
+| 3 | DWDM | 143 | 16.0 % |
+| 4 | RLDL | 129 | 14.4 % |
+| 5 | DS | 107 | 12.0 % |
+| 6 | PRCV case study 2 | 55 | 6.1 % |
+| 7 | ML case study 1 | 48 | 5.4 % |
+| 8 | ML case study 2 | 40 | 4.5 % |
+| 9 | PRCV case study 1 | 24 | 2.7 % |
 
-The four case studies were added **after** launch and still took about **a fifth of all downloads**, so they are worth the effort.
+The four case studies were added **after** launch and still took nearly **a fifth of all downloads** (167 of 895), so they are worth the effort.
 
 ### Students who grabbed the whole set
 
@@ -336,13 +336,13 @@ A large group did not stop at one subject. They downloaded **three or more diffe
 
 <p align="center"><img src="analytics/08_india_map.png" width="860" alt="India map of visitors" /></p>
 
-About **96 %** of visitors are in India, and **over half sit inside Delhi NCR**: Delhi itself, Ghaziabad, Gurugram, Greater Noida, Faridabad and the surrounding localities, with a few visitors from Haryana, Punjab, Bihar, Rajasthan and Uttarakhand. Location is approximate, detected from the network, not exact. The handful of visitors outside India were almost all cloud crawlers, not students.
+About **96 %** of visitors are in India, and **most sit inside Delhi NCR**: Delhi itself, Ghaziabad, Gurugram, Greater Noida, Faridabad and the surrounding localities, with a few visitors from Haryana, Punjab, Bihar, Rajasthan and Uttarakhand. Location is approximate, detected from the network, not exact. The handful of visitors outside India were almost all cloud crawlers, not students.
 
 ### Devices
 
 <p align="center"><img src="analytics/05_devices.png" width="860" alt="Devices" /></p>
 
-**About 40 % of downloads came from phones.** Students download first and print later, so mobile had to be a first-class citizen, not an afterthought. Chrome dominates, with Safari on iPhones next.
+**About 38 % of downloads came from phones.** Students download first and print later, so mobile had to be a first-class citizen, not an afterthought. Chrome dominates, with Safari on iPhones next.
 
 ### Loyalty and speed
 
@@ -354,7 +354,7 @@ Left: how many times each visitor came back. Right: how long each download took 
 
 | Outcome | Count |
 |---|---|
-| Completed | 758 |
+| Completed | 895 |
 | Politely stopped by the hourly limit | 7 |
 | Rejected as bad input | 5 |
 | Left before finishing | 9 |
@@ -364,7 +364,7 @@ Left: how many times each visitor came back. Right: how long each download took 
 ## 10. What I learned
 
 1. **The boring part is the product.** Students did not want a clever website. They wanted their weekend back. Most of the value is the verified content and the polish on it.
-2. **Free, instant, no-login wins.** 60 % of visitors converting with zero onboarding says friction was the enemy all along.
+2. **Free, instant, no-login wins.** 62 % of visitors converting with zero onboarding says friction was the enemy all along.
 3. **Move work to the user's device.** It turned a "server melts on submission night" problem into a non-problem, and kept hosting cost near zero.
 4. **Design for a stressed person at midnight on a phone.** Big tiles, one required field, instant feedback.
 5. **Add the second wave of content after launch.** The case studies came from watching what students asked for next.
